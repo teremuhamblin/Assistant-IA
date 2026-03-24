@@ -3,7 +3,7 @@
 </p>
 
 <p align="center">
-Projet personnel
+Assistant IA
 </p>
 
 ---
@@ -17,12 +17,12 @@ Projet personnel
 ---
 
 📖 À propos du projet
-The MadDoG.tmdg est un projet personnel de présentation avec assistant IA
+- The MadDoG.tmdg est un projet personnel de présentation avec assistant IA
 
 ---
 
 🛡️ Licence
-Creative Commons Zero v1.0 Universal (CC0 1.0).  
+- Creative Commons Zero v1.0 Universal (CC0 1.0).  
 
 ---
 
