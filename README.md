@@ -17,14 +17,12 @@ Projet personnel
 ---
 
 📖 À propos du projet
-
-The MadDoG.tmdg est un projet personnel de présentation
+The MadDoG.tmdg est un projet personnel de présentation avec assistant IA
 
 ---
 
 🛡️ Licence
-
-Ce projet est placé sous Creative Commons Zero v1.0 Universal (CC0 1.0).  
+Creative Commons Zero v1.0 Universal (CC0 1.0).  
 
 ---
 
