@@ -71,7 +71,7 @@ Desktop.ini
 *.xcf
 *.kra
 
-# Miniatures automatiques
+########## Miniatures automatiques ##########
 ._*
 
 ########## NOTES & BROUILLONS ##########
@@ -84,6 +84,60 @@ notes_privées/
 # Logs éventuels
 *.log
 
-# Sauvegardes automatiques
+######@@@# Sauvegardes automatiques ##########
 *.autosave
 *.sync-conflict*
+
+###  Common Lisp / SBCL / Quicklisp ###
+
+# Compiled Lisp files
+*.fasl
+*.ufasl
+*.cfasl
+*.fas
+*.x86f
+*.lx64fsl
+*.lx32fsl
+*.dx64fsl
+*.dx32fsl
+
+# SBCL core dumps
+core
+*.core
+
+# Quicklisp local files
+quicklisp/
+.local-projects/
+
+# ASDF cache
+.cache/
+asdf-cache/
+systems/
+
+# Temporary files
+*~
+*.swp
+*.tmp
+*.bak
+*.old
+
+# Logs
+*.log
+
+# Editor-specific
+# VSCode
+.vscode/
+# Emacs
+.emacs.desktop
+.emacs.desktop.lock
+# JetBrains
+.idea/
+
+# OS-specific
+.DS_Store
+Thumbs.db
+
+# Build / output folders
+build/
+output/
+dist/
