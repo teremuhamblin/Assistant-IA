@@ -1,0 +1,49 @@
+name: Publish EXE Package
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com/
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Build .exe
+        run: |
+          mkdir dist
+          echo "TODO: build exe" > dist/assistant-ia.exe
+
+      - name: Create package.json for GitHub Packages
+        run: |
+          echo "{
+            \"name\": \"@${{ github.repository_owner }}/assistant-ia-exe\",
+            \"version\": \"1.0.0\",
+            \"description\": \"Assistant-IA Windows executable\",
+            \"repository\": \"https://github.com/${{ github.repository }}\",
+            \"files\": [\"assistant-ia.exe\"]
+          }" > dist/package.json
+
+      - name: Copy exe into package folder
+        run: cp dist/assistant-ia.exe dist/assistant-ia.exe
+
+      - name: Publish to GitHub Packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm publish dist --registry=https://npm.pkg.github.com/
