@@ -1,4 +1,6 @@
-# ✨ Features — The MadDoG.tmdg
+###### features.md * markdown
+
+# ✨ Features
 
 Ce document liste les fonctionnalités actuelles et les évolutions prévues du projet.
 
