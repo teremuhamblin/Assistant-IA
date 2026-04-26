@@ -3,7 +3,7 @@
 
 import { APP, getAppInfo } from "./config.js";
 
-export function initMadDog() {
+export function initAssistantIA() {
   console.log("Initialisation de :", getAppInfo());
 
   const input = document.querySelector("#question");
