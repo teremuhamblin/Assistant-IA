@@ -37,12 +37,16 @@ Ce module est volontairement minimal afin de rester pédagogique et extensible.
 
 ### 🦊 Structure
 ```text
-/
+Assistant-IA/
+├── .github/
+│   ├── .gitkeep
 ├── docs/
 │   ├── overview.md
 │   ├── features.md
 │   ├── assistant-ia.md
 │   └── roadmap.md
+├── design/
+│   ├── system.css
 │
 ├── script/
 │   ├── ai-core.js
