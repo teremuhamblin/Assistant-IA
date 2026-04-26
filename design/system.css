@@ -1,11 +1,21 @@
-/* Design System minimal — Assistant-IA */
+/* Design System — Assistant‑IA */
 
 :root {
   --bg: #f5f5f5;
   --fg: #222;
   --primary: #ff6600;
+  --error: #d9534f;
   --radius: 8px;
   --font: "Segoe UI", sans-serif;
+}
+
+/* Mode sombre automatique */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1e1e1e;
+    --fg: #e5e5e5;
+    --primary: #ff8800;
+  }
 }
 
 body {
@@ -30,6 +40,13 @@ h1 {
   box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
 
+@media (prefers-color-scheme: dark) {
+  .card {
+    background: #2a2a2a;
+    box-shadow: none;
+  }
+}
+
 input {
   width: 100%;
   padding: .6rem;
@@ -52,4 +69,22 @@ button {
 .answer {
   margin-top: 1rem;
   font-weight: bold;
+  min-height: 1.5rem;
+}
+
+/* Animation typing */
+.typing {
+  border-right: 2px solid var(--fg);
+  animation: blink 0.7s infinite;
+}
+
+@keyframes blink {
+  50% { border-color: transparent; }
+}
+
+.error {
+  margin-top: .5rem;
+  color: var(--error);
+  font-size: .9rem;
+  min-height: 1rem;
 }
