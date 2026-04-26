@@ -10,6 +10,8 @@ Créer un assistant IA minimaliste, compréhensible, extensible et utilisable co
 pour des versions plus avancées.
 
 ## Structure du projet
+- `.github/` — Parametrage du projet
+- `design/`  — Graphisme 
 - `docs/` — Documentation officielle
 - `script/` — Logique IA (JS + Lisp)
 - `assets/` — Identité visuelle
