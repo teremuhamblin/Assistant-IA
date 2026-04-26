@@ -1,5 +1,6 @@
 ###### assistant-ia.md * markdown
-# 📘 Assistant IA en Lisp
+# 📘 Assistant-IA 
+>Codé en Common Lisp
 ### 🧠 Présentation
 >L’assistant IA est un système interactif écrit en Common Lisp, conçu pour offrir une interface terminal avancée avec :
 
@@ -64,7 +65,7 @@ Dans un environnement Common Lisp (SBCL, CLISP, etc.) :
 
 ```lisp
 (load "assistant-ai.lisp")
-(maddog-ai:run-menu)
+(assistant-ai:run-menu)
 ```
 
 L’assistant démarre alors avec :
@@ -80,7 +81,7 @@ L’assistant démarre alors avec :
 Pour ajouter un module supplémentaire :
 
 ```lisp
-(maddog-ai:add-module
+(assistant-ai:add-module
   "Nom du module"
   "Description du module"
   "Version")
