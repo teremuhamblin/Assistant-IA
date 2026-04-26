@@ -1,0 +1,42 @@
+name: Build.exe
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-windows-exe:
+    runs-on: windows-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      # Adapte selon ta stack (Node, .NET, etc.)
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      # Exemple: build d’un binaire / installeur .exe
+      # Remplace par ta vraie commande (electron-builder, dotnet publish, etc.)
+      - name: Package .exe
+        run: |
+          mkdir dist
+          # commande de build .exe ici
+          # ex: npx electron-builder --win --x64 --config electron-builder.yml
+          # et copie le résultat dans dist/
+          echo "TODO: build .exe" > dist/Assistant-IA-setup.exe
+
+      - name: Upload .exe artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: assistant-ia-exe
+          path: dist/*.exe
