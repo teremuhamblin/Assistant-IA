@@ -51,7 +51,7 @@ Assistant-IA/
 ├── script/
 │   ├── ai-core.js
 │   ├── assistant-ia.lisp
-│   ├── assistant-ia.lisp
+│   ├── config.js
 │   ├── demo.js
 │   └── initjs
 │
