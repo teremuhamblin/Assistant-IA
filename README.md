@@ -16,11 +16,10 @@ Assistant IA
 
 ---
 
-📖 À propos du projet
+### 📖 À propos du projet
 - The MadDoG.tmdg est un projet personnel de présentation avec assistant IA
 
-🦊 The MadDoG.tmdg — Structure finale (avec tes deux fichiers)
-
+### 🦊 Structure
 ```text
 /
 ├── docs/
@@ -48,7 +47,7 @@ Assistant IA
 
 ---
 
-🛡️ Licence
+### 🛡️ Licence
 - Creative Commons Zero v1.0 Universal (CC0 1.0).  
 
 ---
