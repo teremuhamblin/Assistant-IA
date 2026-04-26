@@ -7,7 +7,8 @@ Ce dossier contient la logique fonctionnelle du projet, incluant l’assistant I
 - `ai-core.js` — Réponses IA simples en JavaScript  
 - `assistant-ia.lisp` — Mini moteur IA expérimental en Lisp  
 - `config.js` — Configuration globale du projet  
-- `demo.js` — Script de démonstration pour l’interface  
+- `demo.js` — Script de démonstration pour l’interface
+- `init.js` — Initialise l'assistant et verifie les éléments HTML 
 ```
 
 ## Objectif
