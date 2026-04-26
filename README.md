@@ -19,6 +19,33 @@ Assistant IA
 📖 À propos du projet
 - The MadDoG.tmdg est un projet personnel de présentation avec assistant IA
 
+🦊 The MadDoG.tmdg — Structure finale (avec tes deux fichiers)
+
+```text
+/
+├── docs/
+│   ├── overview.md
+│   ├── features.md
+│   ├── assistant-ia.md
+│   └── roadmap.md
+│
+├── script/
+│   ├── ai-core.js
+│   ├── assistant-ia.lisp
+│   ├── config.js
+│   └── demo.js
+│
+├── assets/
+│   ├── logo.png
+│   ├── avatar.png
+│   ├── banner.png
+│   └── preview.png
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
+
 ---
 
 🛡️ Licence
