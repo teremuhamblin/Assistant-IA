@@ -2,22 +2,31 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Assistant-IA </title> — Démo IA</title>
+  <title>Assistant‑IA — Démo</title>
   <link rel="stylesheet" href="design/system.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
 <body>
   <header>
-    <h1>Assistant-IA — Démo Assistant IA</h1>
+    <h1>Assistant‑IA — Démonstration</h1>
   </header>
 
   <main>
     <div class="card">
       <label for="question">Pose une question :</label>
-      <input id="question" type="text" placeholder="Ex: bonjour">
+
+      <input 
+        id="question" 
+        type="text" 
+        placeholder="Ex : bonjour"
+        autocomplete="off"
+      >
+
       <button id="send">Envoyer</button>
 
       <p class="answer" id="answer"></p>
+      <p class="error" id="error"></p>
     </div>
   </main>
 
