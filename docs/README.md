@@ -1,6 +1,6 @@
 # 📚 Dossier `docs/`
 
-Ce dossier contient la documentation officielle du projet **The MadDoG.tmdg**.
+Ce dossier contient la documentation officielle du projet **Assistant-IA**.
 
 ## Contenu
 ```text
