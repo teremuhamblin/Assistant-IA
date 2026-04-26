@@ -1,10 +1,8 @@
-<p align="center">
-🐺 The MadDoG.tmdg
+<p align="right">
+README.md * markdown
 </p>
 
-<p align="center">
-Assistant IA
-</p>
+# 🐺 Assistant-IA
 
 ---
 
