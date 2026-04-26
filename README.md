@@ -53,7 +53,7 @@ Assistant-IA/
 │   ├── assistant-ia.lisp
 │   ├── config.js
 │   ├── demo.js
-│   └── initjs
+│   └── init.js
 │
 ├── assets/
 │   ├── logo.png
