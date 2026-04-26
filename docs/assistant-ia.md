@@ -1,7 +1,7 @@
 ###### assistant-ia.md * markdown
 # 📘 Assistant IA en Lisp
 ### 🧠 Présentation
->L’assistant IA MadDoG est un système interactif écrit en Common Lisp, conçu pour offrir une interface terminal avancée avec :
+>L’assistant IA est un système interactif écrit en Common Lisp, conçu pour offrir une interface terminal avancée avec :
 
 - couleurs ANSI  
 - menus interactifs  
