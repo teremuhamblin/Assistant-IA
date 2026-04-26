@@ -15,7 +15,7 @@ README.md * markdown
 ---
 
 ### 📖 À propos du projet
-- The MadDoG.tmdg est un projet personnel de présentation avec assistant IA
+- Projet personnel de présentation avec assistant IA
 - Ce document décrit le fonctionnement conceptuel de l’assistant IA intégré au projet.
 
 ### 🎯 Objectif
@@ -51,8 +51,9 @@ Assistant-IA/
 ├── script/
 │   ├── ai-core.js
 │   ├── assistant-ia.lisp
-│   ├── config.js
-│   └── demo.js
+│   ├── assistant-ia.lisp
+│   ├── demo.js
+│   └── initjs
 │
 ├── assets/
 │   ├── logo.png
