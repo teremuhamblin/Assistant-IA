@@ -1,11 +1,11 @@
 ;;;; ============================================================
-;;;;  MadDoG Interactive AI Assistant — Lisp Edition
+;;;;  The MadDoG.tmdg Interactive AI Assistant — Lisp Edition
 ;;;;  Couleurs ANSI, menus, animations, modules dynamiques
 ;;;; ============================================================
 
-(defpackage :maddog-ai
+(defpackage :assistant-ai
   (:use :cl))
-(in-package :maddog-ai)
+(in-package :assistant-ai)
 
 ;;; ------------------------------------------------------------
 ;;; 1. Couleurs ANSI
@@ -67,11 +67,11 @@
 (defun ai-response (input)
   (cond
     ((search "bonjour" input :ignore-case t)
-     "Bonjour humain. Comment puis-je t’aider aujourd’hui.")
+     "Ia Ora Nā à toi humain. Comment puis-je t’aider aujourd’hui ?")
     ((search "module" input :ignore-case t)
      "Les modules sont prêts. Utilise l’option 2 du menu.")
     ((search "aide" input :ignore-case t)
-     "Je suis ton assistant IA. Navigue avec le menu.")
+     "Je suis ton Assistant IA. Navigue avec le menu.")
     (t
      "Je ne comprends pas encore cette requête, mais j’apprends.")))
 
@@ -93,7 +93,7 @@
      (let ((choice (read-line)))
        (cond
          ((string= choice "1")
-          (typewriter (color *magenta* "Bienvenue dans le système MadDoG."))
+          (typewriter (color *magenta* "Bienvenue dans le système The MadDoG.tmdg."))
           (typewriter "Assistant IA opérationnel.")
           (typewriter "Modules chargés."))
          
@@ -118,7 +118,7 @@
 ;;; ------------------------------------------------------------
 
 (add-module "Core System"
-            "Base du système MadDoG."
+            "Base du système The MadDoG.tmdg."
             "1.0.0")
 
 (add-module "Security Engine"
