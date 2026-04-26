@@ -1,0 +1,61 @@
+name: Publish DEB Package
+
+on:
+  push:
+    branches: [ main ]
+  workflow_dispatch:
+
+jobs:
+  build-and-publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          registry-url: https://npm.pkg.github.com/
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build project
+        run: npm run build
+
+      - name: Build .deb
+        run: |
+          mkdir -p pkg/usr/local/bin
+          echo '#!/bin/bash' > pkg/usr/local/bin/assistant-ia
+          echo 'echo "Assistant-IA running"' >> pkg/usr/local/bin/assistant-ia
+          chmod +x pkg/usr/local/bin/assistant-ia
+
+          mkdir -p pkg/DEBIAN
+          echo "Package: assistant-ia
+Version: 1.0.0
+Architecture: amd64
+Maintainer: ${{ github.repository_owner }}
+Description: Assistant-IA Debian package" > pkg/DEBIAN/control
+
+          dpkg-deb --build pkg
+          mv pkg.deb assistant-ia_1.0.0_amd64.deb
+
+      - name: Prepare npm package folder
+        run: |
+          mkdir publish
+          cp assistant-ia_1.0.0_amd64.deb publish/
+
+          echo "{
+            \"name\": \"@${{ github.repository_owner }}/assistant-ia-deb\",
+            \"version\": \"1.0.0\",
+            \"description\": \"Assistant-IA Debian package\",
+            \"repository\": \"https://github.com/${{ github.repository }}\",
+            \"files\": [\"assistant-ia_1.0.0_amd64.deb\"]
+          }" > publish/package.json
+
+      - name: Publish to GitHub Packages
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: npm publish publish --registry=https://npm.pkg.github.com/
