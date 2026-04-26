@@ -10,22 +10,24 @@
 <body>
   <header>
     <h1>Assistant‑IA — Démonstration</h1>
+    <button id="toggle-theme" class="theme-btn">🌙</button>
   </header>
 
   <main>
-    <div class="card">
-      <label for="question">Pose une question :</label>
+    <div class="chat-container">
 
-      <input 
-        id="question" 
-        type="text" 
-        placeholder="Ex : bonjour"
-        autocomplete="off"
-      >
+      <div id="chat-history" class="chat-history"></div>
 
-      <button id="send">Envoyer</button>
+      <div class="input-zone">
+        <input 
+          id="question" 
+          type="text" 
+          placeholder="Écris un message…"
+          autocomplete="off"
+        >
+        <button id="send">Envoyer</button>
+      </div>
 
-      <p class="answer" id="answer"></p>
       <p class="error" id="error"></p>
     </div>
   </main>
