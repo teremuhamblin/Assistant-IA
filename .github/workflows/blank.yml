@@ -1,0 +1,11 @@
+name: Blank Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  blank:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Do nothing
+        run: echo "Blank workflow executed."
