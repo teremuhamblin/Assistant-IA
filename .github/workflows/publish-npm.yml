@@ -1,12 +1,10 @@
-name: Publish Assistant-IA Package
+name: Publish Placeholder Package
 
 on:
-  push:
-    tags:
-      - "package-v*"
+  workflow_dispatch:
 
 jobs:
-  publish:
+  publish-npm:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -18,12 +16,8 @@ jobs:
           node-version: 20
           registry-url: https://npm.pkg.github.com/
 
-      - name: Install dependencies
-        run: npm install
-        working-directory: package
-
-      - name: Publish package
+      - name: Publish npm package
         run: npm publish
-        working-directory: package
+        working-directory: placeholder-npm
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
