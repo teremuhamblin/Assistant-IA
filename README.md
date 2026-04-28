@@ -15,6 +15,7 @@ README.md * markdown
 ---
 
 ### 📖 À propos du projet
+>Base V1.0.0
 - Projet personnel de présentation avec assistant IA
 - Ce document décrit le fonctionnement conceptuel de l’assistant IA intégré au projet.
 
