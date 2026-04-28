@@ -1,5 +1,5 @@
 {
-  "name": "@teremu/assistant-ia-placeholder",
+  "name": "assistant-ia-placeholder",
   "version": "0.0.2",
   "description": "Package placeholder pour GitHub Packages",
   "main": "index.js",
