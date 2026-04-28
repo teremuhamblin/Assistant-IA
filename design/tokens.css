@@ -1,0 +1,33 @@
+:root {
+  /* Couleurs */
+  --ai-color-bg: #05060a;
+  --ai-color-surface: #0b0f1a;
+  --ai-color-primary: #4ade80;
+  --ai-color-primary-soft: rgba(74, 222, 128, 0.12);
+  --ai-color-accent: #22d3ee;
+  --ai-color-border: #1f2933;
+  --ai-color-text: #e5e7eb;
+  --ai-color-text-muted: #9ca3af;
+  --ai-color-danger: #f97373;
+
+  /* Typo */
+  --ai-font-sans: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+    "Segoe UI", sans-serif;
+  --ai-font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Menlo, monospace;
+
+  /* Spacing */
+  --ai-space-1: 0.25rem;
+  --ai-space-2: 0.5rem;
+  --ai-space-3: 0.75rem;
+  --ai-space-4: 1rem;
+  --ai-space-6: 1.5rem;
+  --ai-space-8: 2rem;
+
+  /* Radius */
+  --ai-radius-sm: 0.25rem;
+  --ai-radius-md: 0.5rem;
+  --ai-radius-lg: 0.75rem;
+
+  /* Shadow */
+  --ai-shadow-soft: 0 18px 45px rgba(0, 0, 0, 0.55);
+}
