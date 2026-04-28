@@ -1,4 +1,9 @@
-export function createMessage({ role, content }) {
+// ui-components.js
+// Composants UI pour le chat Assistant‑IA
+
+import { AssistantIA } from "./ai-core.js";
+
+export function createMessageElement({ role, content }) {
   const wrapper = document.createElement("div");
   wrapper.className = `ai-message ai-message--${role}`;
 
@@ -12,6 +17,7 @@ export function createMessage({ role, content }) {
 
   wrapper.appendChild(avatar);
   wrapper.appendChild(bubble);
+
   return wrapper;
 }
 
@@ -39,5 +45,37 @@ export function mountChat(container) {
   chat.appendChild(inputBar);
   container.appendChild(chat);
 
+  // Envoi message
+  send.addEventListener("click", () => {
+    if (!input.value.trim()) return;
+    AssistantIA.ask(input.value.trim());
+    addUserMessage(messages, input.value.trim());
+    input.value = "";
+  });
+
+  // Entrée clavier
+  input.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") send.click();
+  });
+
+  // Écoute des réponses IA
+  document.addEventListener("assistant:message", (event) => {
+    if (event.detail.role === "assistant") {
+      addAIMessage(messages, event.detail.content);
+    }
+  });
+
   return { messages, input, send };
+}
+
+function addUserMessage(container, text) {
+  const el = createMessageElement({ role: "user", content: text });
+  container.appendChild(el);
+  container.scrollTop = container.scrollHeight;
+}
+
+function addAIMessage(container, text) {
+  const el = createMessageElement({ role: "assistant", content: text });
+  container.appendChild(el);
+  container.scrollTop = container.scrollHeight;
 }
