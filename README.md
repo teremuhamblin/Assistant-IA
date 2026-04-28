@@ -29,7 +29,7 @@ comme base pour des versions plus avancées.
 - **Niveau 1 (v1.0)** : réponses statiques, sans contexte.
 - **Niveau 2 (v1.1)** : logique conditionnelle simple.
 - **Niveau 3 (v1.2)** : mini‑moteur IA en Lisp (expérimental).
-- **Niveau 4 (v1.3)** : test et exploitationb(expérimental).
+- **Niveau 4 (v1.3)** : test et exploitation (expérimental).
 
 
 ### 🔧 Technologies
