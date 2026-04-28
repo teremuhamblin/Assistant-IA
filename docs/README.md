@@ -8,6 +8,7 @@ Ce dossier contient la documentation officielle du projet **Assistant-IA**.
 - `features.md` — Fonctionnalités actuelles et prévues  
 - `assistant-ia.md` — Description du module IA (JS + Lisp)  
 - `roadmap.md` — Évolution prévue du projet
+- `.gitkeep` — Reste du dossier
 ```
 
 ## Objectif
