@@ -39,49 +39,6 @@ Ce module est volontairement minimal afin de rester pédagogique et extensible.
 ```text
 Assistant-IA/
 ├── .github/
-│   ├── .gitkeep
-├── docs/
-│   ├── overview.md
-│   ├── features.md
-│   ├── assistant-ia.md
-│   └── roadmap.md
-├── design/
-│   ├── system.css
-│
-├── script/
-│   ├── ai-core.js
-│   ├── assistant-ia.lisp
-│   ├── config.js
-│   ├── demo.js
-│   └── init.js
-│
-├── assets/
-│   ├── logo.png
-│   ├── avatar.png
-│   ├── banner.png
-│   └── preview.png
-│
-├── README.md
-├── LICENSE
-└── .gitignore
-```
-
----
-
-### 🛡️ Licence
-- Creative Commons Zero v1.0 Universal (CC0 1.0).  
-
----
-
-<p align="center">
-🐾 Signature : “The MadDoG — libre.”
-</p>
-
----
-# Nouvelle structure 
-```text
-Assistant-IA/
-├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── bug_report.md
 │   │   ├── feature_request.md
@@ -137,3 +94,21 @@ Assistant-IA/
 ├── LICENSE
 └── .gitignore
 ```
+
+---
+
+### 🛡️ Licence
+- Creative Commons Zero v1.0 Universal (CC0 1.0).  
+
+</p>
+
+---
+
+# Nouvelle structure V1.1.0
+- Mardi 28 avril 2026 - 23h13
+
+---
+
+<p align="center">
+🐾 Signature : “The MadDoG — libre.”
+
