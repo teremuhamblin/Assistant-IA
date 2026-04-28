@@ -108,6 +108,14 @@ Assistant-IA/
 # Nouvelle structure V1.1.0
 - Mardi 28 avril 2026 - 23h13
 
+
+# Nouvelle structure V1.2.0
+- Mardi 28 avril 2026 - 23h33
+
+
+# Nouvelle structure V1.3.0
+- Mardi 28 avril 2026 - 23h51
+
 ---
 
 <p align="center">
