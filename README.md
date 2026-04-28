@@ -78,3 +78,62 @@ Assistant-IA/
 </p>
 
 ---
+# Nouvelle structure 
+```text
+Assistant-IA/
+├── .github/
+│   ├── ISSUE_TEMPLATE/
+│   │   ├── bug_report.md
+│   │   ├── feature_request.md
+│   │   └── task.md
+│   ├── PULL_REQUEST_TEMPLATE.md
+│   ├── workflows/
+│   │   ├── ci.yml
+│   │   └── pages.yml
+│   └── CODEOWNERS
+│
+├── docs/
+│   ├── overview.md
+│   ├── features.md
+│   ├── assistant-ia.md
+│   ├── roadmap.md
+│   ├── architecture.md
+│   ├── design-system.md
+│   ├── api-config.md
+│   └── contributing.md
+│
+├── design/
+│   ├── system.css
+│   ├── tokens.css
+│   └── components.css
+│
+├── script/
+│   ├── ai-core.js
+│   ├── assistant-ia.lisp
+│   ├── config.js
+│   ├── demo.js
+│   ├── init.js
+│   ├── ui-components.js
+│   └── router.js
+│
+├── assets/
+│   ├── logo.png
+│   ├── avatar.png
+│   ├── banner.png
+│   ├── preview.png
+│   ├── icons/
+│   │   ├── send.svg
+│   │   ├── user.svg
+│   │   └── bot.svg
+│   └── fonts/
+│       └── README.md
+│
+├── public/
+│   ├── index.html
+│   ├── demo.html
+│   └── styles.css
+│
+├── README.md
+├── LICENSE
+└── .gitignore
+```
