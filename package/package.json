@@ -1,14 +1,8 @@
 {
-  "name": "@teremu/assistant-ia",
-  "version": "1.0.0",
-  "description": "Package officiel Assistant-IA pour GitHub Packages",
+  "name": "@teremu/assistant-ia-placeholder",
+  "version": "0.0.1",
+  "description": "Package placeholder pour afficher dans GitHub Packages",
   "main": "index.js",
-  "author": "Teremu",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/Teremu/Assistant-IA.git"
-  },
   "publishConfig": {
     "registry": "https://npm.pkg.github.com/"
   }
