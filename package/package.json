@@ -1,9 +1,0 @@
-{
-  "name": "@teremuhamblin/ssistant-ia-placeholder",
-  "version": "0.0.1",
-  "description": "Package placeholder pour GitHub Packages",
-  "main": "index.js",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
-  }
-}
