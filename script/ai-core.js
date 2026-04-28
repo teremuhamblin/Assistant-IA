@@ -1,15 +1,61 @@
 // ai-core.js
-// Module IA minimal pour Assistant-IA
+// Cœur logique de Assistant‑IA : gestion des messages, contexte, et réponses IA.
 
-export function askAssistant-IA(question) {
-  const q = question.toLowerCase().trim();
+export class AssistantCore {
+  constructor(options = {}) {
+    this.history = [];
+    this.maxHistory = options.maxHistory || 20;
+    this.mock = options.mock !== false; // mock activé par défaut
+  }
 
-  const responses = {
-    "bonjour": "Ia ora na, je suis The MadDoG.tmdg, ton assistant IA.",
-    "salut": "Bonjour, comment puis-je t’aider.",
-    "qui es-tu": "Je suis un assistant IA minimal conçu pour ce projet.",
-    "aide": "Pose-moi une question simple et je te répondrai."
-  };
+  // Ajoute un message dans l'historique
+  addMessage(role, content) {
+    const entry = { role, content, timestamp: Date.now() };
+    this.history.push(entry);
 
-  return responses[q] || "Je suis encore en apprentissage.";
+    if (this.history.length > this.maxHistory) {
+      this.history.shift();
+    }
+
+    return entry;
+  }
+
+  // Simule une réponse IA (mock)
+  async generateMockResponse(prompt) {
+    const responses = [
+      "Intéressant, développe un peu ton idée.",
+      "Je vois ce que tu veux dire.",
+      "Peux‑tu préciser ce point.",
+      "Bonne question, analysons cela ensemble.",
+      "Je suis là, continue."
+    ];
+
+    const random = responses[Math.floor(Math.random() * responses.length)];
+    return `${random}`;
+  }
+
+  // Point d’entrée principal
+  async ask(prompt) {
+    this.addMessage("user", prompt);
+
+    let answer;
+
+    if (this.mock) {
+      answer = await this.generateMockResponse(prompt);
+    } else {
+      answer = "⚠️ API non configurée.";
+    }
+
+    const aiMessage = this.addMessage("assistant", answer);
+
+    // Émet un événement global pour le front
+    document.dispatchEvent(
+      new CustomEvent("assistant:message", { detail: aiMessage })
+    );
+
+    return aiMessage;
+  }
 }
+
+// Instance globale (optionnelle)
+export const AssistantIA = new AssistantCore();
