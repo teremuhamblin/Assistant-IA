@@ -1,5 +1,1 @@
-module.exports = {
-  info() {
-    return "Assistant‑IA — package officiel publié sur GitHub Packages";
-  }
-};
+module.exports = "Assistant‑IA placeholder package";
