@@ -1,0 +1,65 @@
+# 🚀 Version 1.1.0 — Finalisation UI + Core IA + SPA
+
+**Milestone :** `v1.1.0`  
+**Statut :** ✔ Terminé  
+**Type :** Amélioration / Stabilisation  
+**Objectif :** Finaliser l’architecture UI + Core IA + SPA pour Assistant‑IA.
+
+---
+
+## 📦 Contenu de la version
+
+- Mise à jour complète de `ui-components.js`
+- Refonte propre et modulaire de `ai-core.js`
+- Intégration des événements IA → UI
+- Compatibilité totale avec `router.js`
+- Préparation pour API IA (mock + pipeline)
+- Harmonisation design system (tokens + components)
+- Préparation pour v1.2 (design system avancé + animations)
+
+---
+
+## ☑️ Checklist de validation
+
+### **Core IA**
+- [x] Refonte complète de `ai-core.js`
+- [x] Ajout du pipeline de messages
+- [x] Ajout du mock IA intelligent
+- [x] Gestion de l’historique (maxHistory)
+- [x] Émission d’événements `assistant:message`
+
+### **UI / Chat**
+- [x] Refonte de `ui-components.js`
+- [x] Ajout du composant message (user + assistant)
+- [x] Ajout du scroll auto
+- [x] Intégration input + bouton + Enter
+- [x] Écoute des événements IA
+
+### **SPA / Routing**
+- [x] Compatibilité avec `router.js`
+- [x] Injection dynamique dans `#app`
+- [x] Support des pages `/` et `/demo`
+
+### **Design System**
+- [x] Ajout de `tokens.css`
+- [x] Harmonisation des couleurs / radius / spacing
+- [x] Mise à jour des composants chat
+
+### **Assets / Structure**
+- [x] Vérification des assets (logo, avatar, preview)
+- [x] Préparation pour icônes SVG
+- [x] Structure prête pour v1.2
+
+---
+
+## 🧪 Résultat
+La version **1.1.0** stabilise l’architecture du projet et prépare la montée en puissance vers la v1.2 (design system avancé + animations + API IA).
+
+---
+
+## 🔜 Prochaine étape (milestone v1.2.0)
+- Ajout des animations (typing, fade, transitions)
+- Ajout du loader IA
+- Refonte du design system (components avancés)
+- Ajout du thème clair
+- Intégration API IA réelle (OpenAI / Azure / Local LLM)
