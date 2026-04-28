@@ -1,0 +1,5 @@
+module.exports = {
+  info() {
+    return "Assistant‑IA — package officiel publié sur GitHub Packages";
+  }
+};
