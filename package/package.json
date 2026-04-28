@@ -1,6 +1,6 @@
 {
   "name": "@teremu/assistant-ia-placeholder",
-  "version": "1.0.0",
+  "version": "0.0.2",
   "description": "Package placeholder pour afficher dans GitHub Packages",
   "main": "index.js",
   "publishConfig": {
