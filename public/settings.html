@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>Assistant‑IA — Paramètres</title>
+  <link rel="stylesheet" href="../design/tokens.css" />
+  <link rel="stylesheet" href="../design/components.css" />
+</head>
+<body class="ai-theme-dark">
+
+  <header class="ai-header">
+    <h1>Paramètres Assistant‑IA</h1>
+  </header>
+
+  <main class="ai-settings">
+    <section>
+      <h2>Thème</h2>
+      <select id="theme-select">
+        <option value="dark">Sombre</option>
+        <option value="light">Clair</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Vitesse IA</h2>
+      <select id="speed-select">
+        <option value="instant">Instantané</option>
+        <option value="normal">Normal</option>
+        <option value="slow">Lent</option>
+      </select>
+    </section>
+
+    <section>
+      <h2>Avatar utilisateur</h2>
+      <input type="text" id="avatar-input" placeholder="Initiales (ex: TU)" />
+    </section>
+
+    <section>
+      <h2>Conversation</h2>
+      <button id="clear-conversation">Effacer la conversation</button>
+      <button id="export-json">Exporter JSON</button>
+      <button id="export-md">Exporter Markdown</button>
+    </section>
+  </main>
+
+  <script src="../script/config.js"></script>
+  <script src="../script/export.js"></script>
+</body>
+</html>
