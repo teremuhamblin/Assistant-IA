@@ -18,6 +18,6 @@ jobs:
 
       - name: Publish npm package
         run: npm publish
-        working-directory: placeholder-npm
+        working-directory: package
         env:
           NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
