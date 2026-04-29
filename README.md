@@ -43,6 +43,11 @@ Ce module est volontairement minimal afin de rester pédagogique et extensible.
 ### 🦊 Structure
 ```text
 Assistant-IA/
+├── Armee_de_terre/
+│   ├── Docs/
+│   │   ├── .gitkeep
+│   │   ├── .confidentiel
+│   │   └── .defense
 ├── .github/
 │   ├── ISSUE_TEMPLATE/
 │   │   ├── bug_report.md
